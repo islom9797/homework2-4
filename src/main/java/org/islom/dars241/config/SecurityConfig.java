@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     /// user bilan ishlovchi class
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(myAuthService);
+        auth.userDetailsService(myAuthService).passwordEncoder(passwordEncoder());
     }
 
     @Override

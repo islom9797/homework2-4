@@ -13,7 +13,7 @@ public class Card {
     @Id
     private Long id;
 
-    private String username;
+    private Long userId;
     private int number;
     private double balance;
     private String expiryDate;
@@ -27,9 +27,9 @@ public class Card {
     public Card( ) {
     }
 
-    public Card(Long id, String username, int number, int balance, String expiryDate, boolean active) {
+    public Card(Long id, Long userId, int number, int balance, String expiryDate, boolean active) {
         this.id = id;
-        this.username = username;
+        this.userId = userId;
         this.number = number;
         this.balance = balance;
         this.expiryDate = expiryDate;
@@ -44,12 +44,12 @@ public class Card {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public Long getUsername() {
+        return userId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(Long userId) {
+        this.userId = userId;
     }
 
     public int getNumber() {

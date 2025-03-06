@@ -13,6 +13,6 @@ public class Income {
 
     private Long fromCardId;
     private Long toCardId;
-    private Long amount;
+    private double amount;
     private String date;
 }
